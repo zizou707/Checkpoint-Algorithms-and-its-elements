@@ -30,3 +30,4 @@ UNTIL s[cc] = "."
 WRITE("The number of words is :",cw) ;
 WRITE("The number of vowels is :",cv) ;
 WRITE("The number of caracteres is :",cc) ;
+END
