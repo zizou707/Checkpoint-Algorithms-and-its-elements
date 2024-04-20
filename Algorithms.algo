@@ -1,3 +1,4 @@
+ALGORITHM Algorithms and its elements
 //declaring variables
 VAR 
 cv , cw , cc : INTEGER ;
