@@ -1,0 +1,31 @@
+//declaring variables
+VAR 
+cv , cw , cc : INTEGER ;
+s : STRING ;
+
+BEGIN
+//writing and reading the sentence
+WRITE("Type the sentence");
+READ(s) ;
+
+// intialisation the count of words, vowels and caracteres in the sentence  
+
+cv = cc = 0 ;
+cw = 1 ;
+
+//using repeat until
+REPEAT
+
+    IF s[cc] = " " THEN
+        cw := cw +1 ;
+    END_IF
+    IF (s[cc] in ["a","e","i","u","o","y"]) THEN
+        cv := cv +1
+    END_IF
+    cc := cc +1 ;
+
+UNTIL s[cc] = "."
+//writing to user the result
+WRITE("The number of words is :",cw) ;
+WRITE("The number of vowels is :",cv) ;
+WRITE("The number of caracteres is :",cc) ;
